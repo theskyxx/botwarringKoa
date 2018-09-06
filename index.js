@@ -9,4 +9,4 @@ app.use(koaBody({
 	multipart: true
 }))
 app.use(require('./src/router'))  
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
